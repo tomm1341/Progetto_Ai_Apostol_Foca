@@ -1,0 +1,33 @@
+{
+    "io": {
+        "training_folder": "./out/training",  
+        "validation_folder": "./out/validation",  
+        "test_folder": "./out/test",  
+        "use_custom_dataset": true,
+        "out_folder": "./out"
+    },
+    "parameters": {
+        "train": true,
+        "test": false,
+        "show_preview": true
+    },
+    "hyper_parameters": {
+        "batch_size": 8,
+        "epochs": 15,
+        "learning_rate": 0.001,
+        "momentum": 0.9
+    },
+    "train_parameters": {
+        "network_type": "net_2",
+        "step_monitor": 5,
+        "accuracy_target": 90,
+        "accuracy_evaluation_epochs": 1,
+        "reload_last_model": false
+    },
+    "early_stop_parameters": {
+        "loss_evaluation_epochs": 1,
+        "start_epoch": 8,
+        "patience": 3,
+        "improvement_rate": 3
+    }
+}
