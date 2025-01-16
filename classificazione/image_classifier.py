@@ -7,8 +7,8 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 
 if __name__ == "__main__":
-    cfg_obj = check_and_get_configuration('C:/Users/Alex/Desktop/ProgettoAI_Classification/classificazione/config/config.json', 
-                                       'C:/Users/Alex/Desktop/ProgettoAI_Classification/classificazione/config/config_schema.json')
+    cfg_obj = check_and_get_configuration('./classificazione/config/config.json', 
+                                       './classificazione/config/config_schema.json')
 
 
     # Verifica che la configurazione sia stata caricata correttamente
